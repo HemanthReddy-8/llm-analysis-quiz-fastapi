@@ -1,0 +1,16 @@
+# render.yaml — deploy a single Docker web service for this repo
+services:
+  - type: web
+    name: llm-analysis-quiz-fastapi
+    env: docker
+    repo: HemanthReddy-8/llm-analysis-quiz-fastapi
+    branch: main
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    buildCommand: ""
+    startCommand: ""
+    instanceCount: 1
+    # Optional env vars
+    envVars:
+      - key: SECRET
+        value: PolireddyPalem
