@@ -1,5 +1,3 @@
-# Windows PowerShell: overwrite Dockerfile with the recommended content
-@"
 # Use Playwright official Python image (latest stable)
 FROM mcr.microsoft.com/playwright/python:latest
 
@@ -16,4 +14,3 @@ ENV PORT=8000
 EXPOSE 8000
 
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
-"@ | Out-File -Encoding utf8 Dockerfile -Force
