@@ -1,5 +1,5 @@
-# Dockerfile — use Playwright official Python image (includes browsers + deps)
-FROM mcr.microsoft.com/playwright/python:latest
+# Dockerfile — Playwright image pinned to v1.56.0 to match Playwright python package
+FROM mcr.microsoft.com/playwright/python:v1.56.0-jammy
 
 WORKDIR /app
 

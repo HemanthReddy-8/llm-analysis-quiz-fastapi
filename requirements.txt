@@ -2,5 +2,5 @@ fastapi
 uvicorn[standard]
 httpx
 pydantic
-playwright
+playwright==1.56.0
 pdfplumber
