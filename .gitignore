@@ -1,0 +1,9 @@
+__pycache__/
+.venv/
+.env
+*.pyc
+.vscode/
+debug_artifacts/
+dbg_step_*.png
+dbg_step_*.html
+last_submit.json
